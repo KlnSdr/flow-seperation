@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    color: white;
+    font-family: Arial;
+}
+
+body {
+    background-color: #18273a;
+}
+
+button {
+    display: block;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #1aa0e8;
+    padding: 0px;
+
+    font-size: large;
+    outline-style: unset;
+}
+
+button :focus {
+    outline: none;
+}
+
+input {
+    outline: none;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    color: black;
+    font-size: 5vw;
+}
+
+input:focus {
+    box-shadow: 0 0 1vw 1vw #1aa0e8;
+}
+
+.mainMenuButton {
+    width: 25%;
+    border-radius: 50vw;
+    display: inline-block;
+    font-size: 8vw;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+    font-size: 12vw;
+}
+
+.hidden {
+    display: none;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+#addValue {
+    margin-top: -20vw
+}
+
+.indicator {
+    position: absolute;
+    background-color: red;
+    margin-left: 2vw;
+    margin-top: 2vw;
+    height: 2.5vw;
+    width: 2.5vw;
+    border-radius: 10vw;
+}
+
+table {
+    width: 100%;
+    margin-top: -1.6vw;
+}
+
+.fa-save {
+    margin-top: 3vw;
+}
+
+.homebutton {
+    background-color: transparent;
+    margin-top: -45vw;
+    margin-left: 5vw;
+    font-size: 5vw;
+    position: fixed;
+}
+
+.buttonNavigate {
+    position: absolute;
+    margin-top: 40vw;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 10vw;
+    text-align: center;
+    padding: 0vw;
+}
+
+.fa-chevron-left {
+    margin-left: -15vw;
+}
+
+.fa-chevron-right {
+    margin-left: 15vw;
+}
+
+#outputChart {
+    margin-top: -20vw;
+}
