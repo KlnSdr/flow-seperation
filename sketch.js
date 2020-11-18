@@ -14,9 +14,9 @@ function startup() {
     let date = new Date();
     document.getElementById("outputDatum").innerText = date.getDate() + "." + (parseInt(date.getMonth()) + 1) + "." + date.getFullYear();
 
-    // switchTo("mainMenu");
+    switchTo("mainMenu");
     // switchTo("addValue");
-    switchTo("displayChart", displayChart);
+    //switchTo("displayChart", displayChart);
 }
 
 function adjustHeight() {
