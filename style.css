@@ -103,21 +103,18 @@ table {
     height: 10vw;
     border-radius: 10vw;
     text-align: center;
+    font-size: 5vw;
     padding: 0vw;
 }
 
 .fa-chevron-left {
-    margin-left: -15vw;
+    margin-left: -25vw;
 }
 
 .fa-chevron-right {
-    margin-left: 15vw;
+    margin-left: 25vw;
 }
 
 #outputChart {
     margin-top: -20vw;
-}
-
-.fa-save {
-    background-color: gray;
 }

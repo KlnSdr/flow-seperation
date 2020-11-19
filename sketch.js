@@ -157,6 +157,8 @@ function saveValue() {
             localStorage.setItem("flow-seperation", JSON.stringify(db));
         }
     }
+    document.getElementById("inputValue").value = "";
+    valueInputChanged();
 }
 
 // class Date {

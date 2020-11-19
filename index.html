@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./include/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="./include/jquery-4.3.1.min.js"></script>
-    <!-- <script src="./include/canvasToBlob.js"></script> -->
-    <!-- <script src="./include/fileSaver.js"></script> -->
     <script src="display.js"></script>
     <script src="sketch.js"></script>
     <title>flow-seperation</title>
@@ -46,7 +44,7 @@
         <div id="displayChart" class="content hidden chartdiv">
             <canvas id="outputChart"></canvas>
             <button class="fas fa-chevron-left buttonNavigate" onclick="displayPreviouseMonth()"></button>
-            <button class="fas fa-save buttonNavigate" onclick="saveChart()"></button>
+            <button id="download" class="fas fa-save buttonNavigate" onclick="saveChart()"></button>
             <button class="fas fa-chevron-right buttonNavigate" onclick="displayNextMonth()"></button>
         </div>
     </div>
