@@ -117,3 +117,7 @@ table {
 #outputChart {
     margin-top: -20vw;
 }
+
+.fa-save {
+    background-color: gray;
+}
