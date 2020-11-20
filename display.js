@@ -259,12 +259,19 @@ function displayNextMonth() {
 
 function saveChart() {
     console.log("save");
-    // document.getElementById("outputChart").toBlob((blob) => {
-    //     saveAs("chart.png");;
-    // });
-    let b64 = charterJet.toBase64Image();
-    let a = document.createElement("a");
-    a.href = b64;
-    a.download = "chart.png";
-    a.click();
+
+    // let leasedJet = document.createElement("canvas");
+    // leasedJet.width = 1920;
+    // leasedJet.height = 1080;
+
+    let leasedJet = charterJet;
+    // leasedJet.canvas.attributes.width = "1920";
+    console.log(leasedJet);
+    alert(leasedJet.toBase64Image());
+
+    // let b64 = charterJet.toBase64Image();
+    // let a = document.createElement("a");
+    // a.href = b64;
+    // a.download = "chart.png";
+    // a.click();
 }
