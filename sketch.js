@@ -159,7 +159,16 @@ function saveValue() {
             localStorage.setItem("flow-seperation", JSON.stringify(db));
         } else {
             db = new Object;
-            db[datum] = value;
+            if (morning == true) {
+                db[datum] = {
+                    morgen: value
+                };
+            } else {
+                db[datum] = {
+                    morgen: null,
+                    abend: value
+                };
+            }
             localStorage.setItem("flow-seperation", JSON.stringify(db));
         }
     }
