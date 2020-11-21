@@ -179,6 +179,7 @@ function saveValue() {
     }
     document.getElementById("inputValue").value = "";
     valueInputChanged();
+    refreshData();
 }
 
 // class Date {

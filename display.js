@@ -20,37 +20,7 @@ function displayChart() {
             chartScriptLoaded = true;
 
             //=============================================================
-            let json = JSON.parse(localStorage.getItem("flow-seperation"));
-
-            data = {};
-            for (let key of Object.keys(json)) {
-                let tmp = key.split(".");
-                let year = tmp[2];
-                let month = tmp[1];
-
-                if (data[year] != undefined) {
-                    if (data[year][month] != undefined) {
-                        data[year][month].push({
-                            value: json[key],
-                            date: key
-                        });
-                    } else {
-                        data[year][month] = [];
-                        data[year][month].push({
-                            value: json[key],
-                            date: key
-                        });
-                    }
-                } else {
-                    data[year] = {};
-                    data[year][month] = [];
-                    data[year][month].push({
-                        value: json[key],
-                        date: key
-                    });
-                }
-                console.log(data);
-            }
+            refreshData();
 
             let date = new Date();
 
@@ -184,8 +154,43 @@ function displayChart() {
     }
 }
 
+function refreshData() {
+    let json = JSON.parse(localStorage.getItem("flow-seperation"));
+    data = {};
+    for (let key of Object.keys(json)) {
+        let tmp = key.split(".");
+        let year = tmp[2];
+        let month = tmp[1];
+
+        if (data[year] != undefined) {
+            if (data[year][month] != undefined) {
+                data[year][month].push({
+                    value: json[key],
+                    date: key
+                });
+            } else {
+                data[year][month] = [];
+                data[year][month].push({
+                    value: json[key],
+                    date: key
+                });
+            }
+        } else {
+            data[year] = {};
+            data[year][month] = [];
+            data[year][month].push({
+                value: json[key],
+                date: key
+            });
+        }
+        console.log(data);
+    }
+}
+
 function displayPreviouseMonth() {
     console.log("prev");
+
+    refreshData();
 
     let schlussel = Object.keys(data[displayYear]);
     console.log(schlussel);
