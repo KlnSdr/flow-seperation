@@ -19,6 +19,7 @@
 <body onload="startup()">
     <div>
         <button id="homebutton" class="homebutton fas fa-home" onclick="switchTo('mainMenu')"></button>
+        <button id="settingsButton" class="settings fas fa-cog" onclick="switchTo('settings')"></button>
         <h1 id="outputDatum">DD.MM.YYYY</h1>
         <div id="mainMenu" class="content">
             <button class="mainMenuButton fas fa-plus" onclick="switchTo('addValue')"></button>
@@ -46,6 +47,21 @@
             <button class="fas fa-chevron-left buttonNavigate" onclick="displayPreviouseMonth()"></button>
             <button id="download" class="fas fa-save buttonNavigate" onclick="saveChart()"></button>
             <button class="fas fa-chevron-right buttonNavigate" onclick="displayNextMonth()"></button>
+        </div>
+        <!-- =========================================== -->
+        <div id="settings" class="content hidden">
+            <table class="tableSettings">
+                <tr>
+                    <td>
+                        <h1 class="versionNumber">v1.3</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button class="mainMenuButton fas fa-trash" onclick="deleteData()"></button>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>

@@ -52,6 +52,7 @@ function switchTo(target, callback = () => {}) {
     document.getElementById(target).classList = "content" + ((target == "displayChart") ? " chartDiv" : "");
 
     document.getElementById("homebutton").classList = (target == "mainMenu") ? document.getElementById("homebutton").classList + " hidden" : (document.getElementById("homebutton").className).replace("hidden", "");
+    document.getElementById("settingsButton").classList = "settings fas fa-cog";
     callback();
 }
 
@@ -67,6 +68,10 @@ function valueInputChanged() {
     } else {
         document.getElementById("indicator").style.backgroundColor = colours[2];
     }
+}
+
+function deleteData() {
+    localStorage.setItem("flow-seperation", "{}");
 }
 
 function saveValue() {

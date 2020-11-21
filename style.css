@@ -84,7 +84,7 @@ table {
     margin-top: -1.6vw;
 }
 
-.fa-save {
+.fa-save,.fa-trash {
     margin-top: 3vw;
 }
 
@@ -92,6 +92,14 @@ table {
     background-color: transparent;
     margin-top: -45vw;
     margin-left: 5vw;
+    font-size: 5vw;
+    position: fixed;
+}
+
+.settings {
+    background-color: transparent;
+    margin-top: -45vw;
+    margin-left: 90vw;
     font-size: 5vw;
     position: fixed;
 }
@@ -117,4 +125,12 @@ table {
 
 #outputChart {
     margin-top: -20vw;
+}
+
+.versionNumber {
+    font-size: 10vw;
+}
+
+.tableSettings {
+    margin-top: -65vw
 }
