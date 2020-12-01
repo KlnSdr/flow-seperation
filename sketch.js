@@ -8,11 +8,11 @@ function startup() {
         });
     }
 
-    // if (localStorage.getItem("flow-seperation") == undefined) {
-    //     alert("empty");
-    // } else {
-    //     alert(localStorage.getItem("flow-seperation"));
-    // }
+    if (localStorage.getItem("flow-seperation") == undefined) {
+        alert("empty");
+    } else {
+        alert(localStorage.getItem("flow-seperation"));
+    }
 
     window.addEventListener("resize", adjustHeight, false);
     adjustHeight();
