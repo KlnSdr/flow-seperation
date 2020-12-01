@@ -23,6 +23,7 @@ function startup() {
     switchTo("mainMenu");
     // switchTo("addValue");
     //switchTo("displayChart", displayChart);
+    document.getElementById("outputData").value = JSON.stringify(localStorage.getItem("flow-seperation"));
 }
 
 function adjustHeight() {
